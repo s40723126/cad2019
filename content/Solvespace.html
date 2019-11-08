@@ -99,6 +99,11 @@ init_mathjax();
 <script src="https://scrum-3.github.io/web/brython/brython.js"></script>
 <script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
 -->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
 
 </head>
 <body>
@@ -138,7 +143,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='Solvespace.html'>Solvespace</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='Solvespace.html'>Solvespace</a><li><a href='V-rep.html'>V-rep</a></li>
                       </ul>
                 </nav>
               </div>
@@ -149,14 +154,14 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <br /><h1>Solvespace</h1>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='V-rep.html'>Next</a> >> V-rep<br /><h1>Solvespace</h1>
 <p>編譯過程</p>
 <p>先將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe</p>
 <p>git version 查驗 git 版本 ( 需要git 2.13 版本以上 )</p>
 <p>git clone --recurse-submodules https://github.com/solvespace/solvespace.git solvespace</p>
 <p>(將子模組中的資料全部取下放在solvespace的資料夾中)</p>
 <p>上述指令同:</p>
-<p>git clone https://github.com/solvespace/solvespace.git</p>
+<p>git clone<a href="https://github.com/mdecourse/cmsimde.git"> https://github.com/solvespace/solvespace.git</a></p>
 <p>cd solvespace</p>
 <p>git submodule init</p>
 <p>git submodule update</p>
@@ -172,7 +177,8 @@ init_mathjax();
 <p>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</p>
 <p>mingw32-make</p>
 <p>將libpng.dll.a重新命名為libpng_static.a並且複製到 Y:\msys64\mingw64\lib</p>
-<p>完成後若solvespace.exe可順利打開即成功</p><br />Develop << <a href='Develop.html'>Previous</a> </div>
+<p>完成後若solvespace.exe可順利打開即成功</p>
+<br />Develop << <a href='Develop.html'>Previous</a> <a href='V-rep.html'>Next</a> >> V-rep</div>
         
     <!-- footer -->
       <div class="container">
