@@ -39,15 +39,15 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+# 國立虎尾科技大學
 
-### KMOLab
+##### 電腦輔助設計與實習-40723126
 
 <small>
-Created by [KMOLab](http://lab.kmol.info/)
+CAD2019
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+[個人網站](https://s40723126.github.io/cad2019/content/index.html) [倉儲](https://github.com/s40723126/cad2019)
 
 
     </script>
@@ -71,71 +71,48 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 
 						
-<section>
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+#### git submodule add [網址](https://github.com/mdecourse/cmsimde)
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
 
-$$I = \int \rho R^{2} dV$$
+#### 導入cmsimde
     </script>
 </section>
-
 
 
 						
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+
+## Solvespace
+
+
+ #### solvespace[編譯](https://s40723126.github.io/cad2019/content/Solvespace.html) 
     </script>
 </section>
-
 
 
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+<!-- 請注意, @others 不可以內縮 -->
 
-### 導入影片 template
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+## 原文書翻譯
+
+
+ #### [NX 12 for Engineering Design](https://s40723126.github.io/cad2019/content/%E7%AC%AC5%E7%AB%A0%E8%B5%B7%E8%8D%89.html)
+
+#### [Building a clean model tutorial](https://s40723126.github.io/cad2019/content/W17.html)
     </script>
 </section>
 
 
 						
-</section>
-
 </div>
 
 </div>
